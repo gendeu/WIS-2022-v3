@@ -25,10 +25,13 @@ def perform_login(request):
             return HttpResponseRedirect("/")        
             
 def render_home(request):
-    return render(request, "dashboard/index.html")
+    return render(request, "dashboard/base.html")
+
+def show_users(request):
+    return render(request, "dashboard/pages/users.html")
 
 def render_signup(request):
-    return render(request, "welcome/auth_register.html")
+    return render(request, "dashboard/pages/add_user.html")
 
 def perform_logout(request):
     logout(request)
@@ -54,8 +57,8 @@ def perform_register(request):
     # JsonResponse(data)
     return JsonResponse(data)
 
-def render_success(request):
-    return render(request, "welcome/success.html")
+# def render_success(request):
+#     return render(request, "welcome/success.html")
 
 # def error_404(request, exception):
 #     return render(request,"error/404.html")
