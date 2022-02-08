@@ -13,6 +13,7 @@ install python app to "https://www.python.org/downloads/"
     django-admin (shows all commands can be used)
     django-admin startproject project_name .
 
+    python manage.py makemigrations app_name - folder
     python manage.py migrate
     python manage.py createsuperuser
 
