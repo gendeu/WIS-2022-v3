@@ -8,7 +8,7 @@ import requests
 # Create your views here.
 
 def render_login(request):
-    return render(request, "welcome/auth_login.html")
+    return render(request, "login.html")
 
 def perform_login(request):
     if request.method != "POST":

@@ -37,3 +37,7 @@ cd desktop/project_name code .
     (every app created must be added to settings.py "INSTALLED_APPS = []")
     
 create urls.py to app_folder (for routes)
+
+BACKEND USES - REST API (https://www.django-rest-framework.org/ & https://www.django-rest-framework.org/topics/documenting-your-api/)
+
+FRONTED USES - BOOTSTRAP5(https://mdbootstrap.com/docs/standard/getting-started/installation/)

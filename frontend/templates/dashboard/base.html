@@ -14,9 +14,13 @@
 
     <title>Warehouse Inventory System Admin - Dashboard</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- Style-->  
+	<!-- Styles -->  
 	<link rel="stylesheet" href="{% static 'assets/style.css' %}">
+
+  {% comment %} MDB STYLING "https://mdbootstrap.com/docs/" {% endcomment %}
+  <link rel="stylesheet" href="{% static 'assets/font-awesome.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/font-style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/mdb-style.css' %}">
 
   </head>
 
@@ -24,14 +28,19 @@
 
 	{% include 'dashboard/includes/navbar.html' %}
 
+  <div class="p-5">
     {% block content %}
 		{% include 'dashboard/pages/index.html' %}
     {% endblock %} 
+  </div>
+  
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- Mirrored from warehouse-admin-dashboard.multipurposethemes.com/../main/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 14:19:30 GMT -->
+<!-- Scripts -->  
 <script src="{% static 'assets/jquery.js' %}"></script>
+
+{% comment %} MDB SCRIPT "https://mdbootstrap.com/docs/" {% endcomment %}
+<script src="{% static 'assets/mdb-script.js' %}"></script>
 
 <script>
   {% include 'dashboard/functions/scripts.js' %}
